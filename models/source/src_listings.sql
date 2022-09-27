@@ -1,6 +1,6 @@
 with raw_listings as(
 
-select * from AIRBNB.RAW.RAW_LISTINGS
+select * from {{ source('AIRBNB', 'RAW_LISTINGS') }}
 
 )
 
@@ -11,6 +11,7 @@ select
     listing_url,
     room_type,
     host_id,
+    minimum_nights,
     price as price_str,
     created_at,
     updated_at 
