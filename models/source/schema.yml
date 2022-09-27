@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: AIRBNB
+    database: RAW
+    tables:
+      - name: RAW_HOSTS
+      - name: RAW_LISTINGS
+      - name: RAW_REVIEWS
