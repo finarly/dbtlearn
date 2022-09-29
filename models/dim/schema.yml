@@ -3,3 +3,4 @@ version: 2
 models:
   - name: dim_listings_cleansed
   - name: dim_hosts_cleansed
+  - name: dim_listings_w_hosts
