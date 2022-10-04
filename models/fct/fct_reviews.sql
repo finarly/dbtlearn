@@ -8,8 +8,9 @@ with src_reviews as (
 
 )
 
-select 
-
+select
+    
+    {{ dbt_utils.surrogate_key(['LISTING_ID','REVIEW_DATE','REVIEWER_NAME','REVIEW_TEXT']) }} as review_id,
     * 
     
 from src_reviews

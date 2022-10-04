@@ -1,6 +1,6 @@
 with raw_reviews as(
 
-select * from {{ source('AIRBNB', 'RAW_REVIEWS') }}
+select * from {{ source('airbnb', 'reviews') }}
 
 )
 

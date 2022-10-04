@@ -1,6 +1,6 @@
 with raw_hosts as(
 
-select * from {{ source('AIRBNB', 'RAW_HOSTS') }}
+select * from {{ source('airbnb', 'hosts') }}
 
 )
 
